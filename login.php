@@ -1,4 +1,5 @@
 <?php
+//for sign up part
 $insert = false;
 if(isset($_POST['full_name'])){
     // Set connection variables
