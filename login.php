@@ -1,40 +1,6 @@
 <?php
-//for sign up part
-$insert = false;
-if(isset($_POST['full_name'])){
-    // Set connection variables
-    $server = "localhost";
-    $username = "root";
-    $password = "";
-    $dbname="webtech";
-    // Create a database connection
-    $con = mysqli_connect($server, $username, $password,$dbname);
-
-    // Check for connection success
-    if(!$con){
-        die("connection to this database failed due to" . mysqli_connect_error());
-    }
-    // echo "Success connecting to the db";
-    $full_name = $_POST['full_name'];
-    $email = $_POST['email'];
-    $password = $_POST['password'];
-    $sql = "INSERT INTO example('full_name','email','password') VALUES('$full_name', '$email','$password');";
-    // echo $sql;
-
-    // Execute the query
-    if($con->query($sql) == true){
-        // echo "Successfully inserted";
-
-        // Flag for successful insertion
-        $insert = true;
-    }
-    else{
-        echo "ERROR: $sql <br> $con->error";
-    }
-
-    // Close the database connection
-    $con->close();
-}
+include("connection.php");
+error_reporting(0);
 ?>
 <!DOCTYPE html>
 <html>
@@ -123,3 +89,30 @@ if(isset($_POST['full_name'])){
       </script>
    </body>
 </html>
+<?php
+$user=$_GET['username'];
+$pass=$_GET['password'];
+$fl=$_GET['full_name'];
+$em=$_GET['email'];
+$pa=$_GET['password'];
+$query="INSERT INTO login VALUES('$user','$pass')";
+$query1="INSERT INTO signup VALUES('$fl','$em','$pa')";
+$data=mysqli_query($conn,$query);
+$data1=mysqli_query($conn,$query1);
+if($data)
+{
+    echo "data inserted into database";
+
+}
+else{
+    echo "failed ";
+}
+if($data1)
+{
+   echo "data inserted into database";
+
+}
+else{
+   echo "failed ";
+}
+?>
