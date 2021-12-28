@@ -42,6 +42,7 @@ error_reporting(0);
                      <div class="btn-layer"></div>
                      <input type="submit" value="Login">
                   </div>
+                  <a href="start.html">yes</a>
                   <div class="signup-link">
                      Not a member? <a href="">Signup now</a>
                   </div>
