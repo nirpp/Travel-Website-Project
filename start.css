@@ -49,7 +49,7 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: url(Images/Goa.jpg);
+    background: url(images/image1.jpg);
     background-size: cover;
 }
 
@@ -299,9 +299,9 @@ header .navigation li a:hover::after {
 }
 
 .contactUs {
-    background: url("./Images/bg2.jpg");
-    background-size: cover;
-    background-position: center;
+    background: url("images/contact-banner.svg");
+    background-size: 50%;
+    background-position: right;
     background-repeat: no-repeat;
 }
 
@@ -372,3 +372,56 @@ header .navigation li a:hover::after {
     color: #fff;
     font-weight: 300;
 }
+.footer{
+    background:#333;
+  }
+  
+  .footer .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap:1rem;
+  }
+  
+  .footer .box-container .box{
+    padding: 10px;
+    flex:1 1 25rem;
+  }
+  
+  .footer .box-container .box h3{
+    font-size: 1rem;
+    padding:.7rem 0;
+    color:#fff;
+  }
+  
+  .footer .box-container .box p{
+    font-size: 1rem;
+    padding:.7rem 0;
+    color:#eee;
+  }
+  
+  .footer .box-container .box a{
+    display: block;
+    font-size: 1rem;
+    padding:.7rem 0;
+    color:#eee;
+  }
+  
+  .footer .box-container .box a:hover{
+    color:var(--orange);
+    text-decoration: underline;
+  }
+  
+  .footer .credit{
+    text-align: center;
+    padding:2rem 1rem;
+    margin-top: 1rem;
+    font-size: 2rem;
+    font-weight: normal;
+    color:#fff;
+    border-top: .1rem solid rgba(255,255,255,.2);
+  }
+  
+  .footer .credit span{
+    color:var(--orange);
+  }
+  

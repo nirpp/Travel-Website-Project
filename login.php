@@ -1,12 +1,9 @@
-<?php
-include("connection.php");
-error_reporting(0);
-?>
+
 <!DOCTYPE html>
 <html>
    <head>
       <meta charset="utf-8">
-      <link rel="stylesheet" href="login.css">
+    
       <title>Login and Registration Form</title>
    </head>
    <body>
