@@ -1,10 +1,10 @@
-
 <!DOCTYPE html>
 <html>
    <head>
       <meta charset="utf-8">
     
       <title>Login and Registration Form</title>
+      <link rel="stylesheet" href="login.css">
    </head>
    <body>
       <div class="wrapper">
@@ -39,7 +39,7 @@
                      <div class="btn-layer"></div>
                      <input type="submit" value="Login">
                   </div>
-                  <a href="start.html">yes</a>
+                 
                   <div class="signup-link">
                      Not a member? <a href="">Signup now</a>
                   </div>
